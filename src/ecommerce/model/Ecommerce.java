@@ -1,6 +1,6 @@
 package ecommerce.model;
 //model
-public abstract  class Ecommerce {
+public abstract class Ecommerce {
 
 	private int  opcao;
 	private int id;
@@ -8,14 +8,16 @@ public abstract  class Ecommerce {
 	private int tipo;
 	private String nome;
 	private float preco;
+	private String produto;
 	
 	//field
-	public Ecommerce(int id, int numero, int tipo, String nome, float preco) {
+	public Ecommerce(int id, int numero, int tipo, String nome, float preco, String produto) {
 		this.id = id;
 		this.numero = numero;
 		this.tipo = tipo;
 		this.nome = nome;
 		this.preco = preco;
+		this.produto = produto;
 		
 	}
 	//gest and setts
@@ -57,6 +59,9 @@ public abstract  class Ecommerce {
 
 		public void setPreco(float preco) {
 			this.preco = preco;
+		}
+		public void setProduto(String prdouto) {
+			this.setProduto(prdouto);
 		}
 
 

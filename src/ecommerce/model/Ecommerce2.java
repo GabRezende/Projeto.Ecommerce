@@ -2,9 +2,11 @@ package ecommerce.model;
 
 public class Ecommerce2 extends Ecommerce {
 
+	private static String produto;
 	private String detalhes;
 	public Ecommerce2(int id, int numero, int tipo, String nome, float preco, String detalhes) {
-		super(id, numero, tipo, nome, preco);
+		super(id, numero, tipo, nome, preco, produto);
+		//Não esquecer de incluir depois os detalhes para plantas vivas
 		this.detalhes = detalhes;
 		
 		
